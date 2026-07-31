@@ -1,0 +1,5 @@
+[
+    { "id": 1, "nome": "Centro", "ativo": true },
+    { "id": 2, "nome": "Brooklin", "ativo": true },
+    { "id": 3, "nome": "Pinheiros", "ativo": true }
+]

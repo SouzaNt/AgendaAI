@@ -1,0 +1,6 @@
+[
+    { "id": 1, "nome": "São Paulo", "id_estado": 1, "ativo": true },
+    { "id": 2, "nome": "Campinas", "id_estado": 1, "ativo": true },
+    { "id": 3, "nome": "Rio de Janeiro", "id_estado": 2, "ativo": true },
+    { "id": 4, "nome": "Belo Horizonte", "id_estado": 3, "ativo": true }
+]

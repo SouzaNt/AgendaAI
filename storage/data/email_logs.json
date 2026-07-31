@@ -1,0 +1,28 @@
+[
+    {
+        "destinatario_email": "natansmak@gmail.com",
+        "destinatario_nome": "Natan",
+        "assunto": "Solicitação de Agendamento #3 - AgendaAI",
+        "corpo": "<p>Sua reserva foi cadastrada com sucesso! Status atual: <strong>Pendente<\/strong>.<\/p>",
+        "tipo_evento": "Agendamento",
+        "data_envio": "2026-07-30 15:37:14",
+        "status": "Enviado (Simulado)",
+        "id": 1,
+        "ativo": true,
+        "created_at": "2026-07-30 15:37:14",
+        "updated_at": "2026-07-30 15:37:14"
+    },
+    {
+        "destinatario_email": "natansmak@gmail.com",
+        "destinatario_nome": "Natan",
+        "assunto": "Solicitação de Agendamento #4 - AgendaAI",
+        "corpo": "<p>Sua reserva foi cadastrada com sucesso! Status atual: <strong>Pendente<\/strong>.<\/p>",
+        "tipo_evento": "Agendamento",
+        "data_envio": "2026-07-30 15:50:23",
+        "status": "Enviado (Simulado)",
+        "id": 2,
+        "ativo": true,
+        "created_at": "2026-07-30 15:50:23",
+        "updated_at": "2026-07-30 15:50:23"
+    }
+]

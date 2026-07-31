@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nome": "Notebook Dell Inspiron i7",
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 2,
+        "nome": "Projetor Datashow Epson 4K",
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 3,
+        "nome": "Caixa de Som Amplificada Bluetooth",
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 4,
+        "nome": "Kit Microfone Sem Fio",
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    }
+]

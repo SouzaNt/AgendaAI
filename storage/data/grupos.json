@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "nome": "Administrador",
+        "permissoes": {
+            "dashboard": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "agenda": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "aprovacoes": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "recursos": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "salas": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "instituicoes": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "usuarios": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "localizacao": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "relatorios": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "auditoria": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "configuracoes": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true }
+        },
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 2,
+        "nome": "Organizador",
+        "permissoes": {
+            "dashboard": { "visualizar": true, "consultar": true, "cadastrar": false, "editar": false, "deletar": false },
+            "agenda": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": false },
+            "aprovacoes": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": false },
+            "recursos": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": false },
+            "salas": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": false },
+            "instituicoes": { "visualizar": true, "consultar": true, "cadastrar": false, "editar": false, "deletar": false },
+            "usuarios": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "localizacao": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "relatorios": { "visualizar": true, "consultar": true, "cadastrar": false, "editar": false, "deletar": false },
+            "auditoria": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "configuracoes": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false }
+        },
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 3,
+        "nome": "Funcionário Agendador",
+        "permissoes": {
+            "dashboard": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "agenda": { "visualizar": true, "consultar": true, "cadastrar": true, "editar": true, "deletar": true },
+            "aprovacoes": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "recursos": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "salas": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "instituicoes": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "usuarios": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "localizacao": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "relatorios": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "auditoria": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false },
+            "configuracoes": { "visualizar": false, "consultar": false, "cadastrar": false, "editar": false, "deletar": false }
+        },
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    }
+]

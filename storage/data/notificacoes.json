@@ -1,0 +1,62 @@
+[
+    {
+        "usuario_id": 1,
+        "titulo": "Recurso em Manutenção",
+        "mensagem": "O recurso 'Notebook Core i7 - #01' (Patrimônio: PAT-2026-001) foi marcado como 'Não Funcionando'. Novos agendamentos bloqueados.",
+        "tipo": "danger",
+        "lida": false,
+        "data_hora": "2026-07-30 15:19:55",
+        "id": 1,
+        "ativo": true,
+        "created_at": "2026-07-30 15:19:55",
+        "updated_at": "2026-07-30 15:19:55"
+    },
+    {
+        "usuario_id": 2,
+        "titulo": "Agendamento #2 Aprovado ✅",
+        "mensagem": "Seu agendamento para 31\/07\/2026 13:00 foi marcado como Aprovado.",
+        "tipo": "success",
+        "lida": false,
+        "data_hora": "2026-07-30 15:22:07",
+        "id": 2,
+        "ativo": true,
+        "created_at": "2026-07-30 15:22:07",
+        "updated_at": "2026-07-30 15:22:07"
+    },
+    {
+        "usuario_id": 1,
+        "titulo": "Novo Agendamento Pendente de Aprovação",
+        "mensagem": "O usuário Natan solicitou agendamento #3. Requer análise.",
+        "tipo": "warning",
+        "lida": false,
+        "data_hora": "2026-07-30 15:37:14",
+        "id": 3,
+        "ativo": true,
+        "created_at": "2026-07-30 15:37:14",
+        "updated_at": "2026-07-30 15:37:14"
+    },
+    {
+        "usuario_id": 3,
+        "titulo": "Agendamento #3 Aprovado ✅",
+        "mensagem": "Seu agendamento para 31\/07\/2026 14:30 foi marcado como Aprovado.",
+        "tipo": "success",
+        "lida": false,
+        "data_hora": "2026-07-30 15:41:45",
+        "id": 4,
+        "ativo": true,
+        "created_at": "2026-07-30 15:41:45",
+        "updated_at": "2026-07-30 15:41:45"
+    },
+    {
+        "usuario_id": 1,
+        "titulo": "Novo Agendamento Pendente de Aprovação",
+        "mensagem": "O usuário Natan solicitou agendamento #4. Requer análise.",
+        "tipo": "warning",
+        "lida": false,
+        "data_hora": "2026-07-30 15:50:23",
+        "id": 5,
+        "ativo": true,
+        "created_at": "2026-07-30 15:50:23",
+        "updated_at": "2026-07-30 15:50:23"
+    }
+]

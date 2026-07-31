@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nome": "Administrador do Sistema",
+        "foto": null,
+        "email": "admin@agendaai.com",
+        "senha": "$2y$12$SoM1rvuGXgABLtLLzmp0GexvMiRp5uyr5QjXPlUE8RNvsNInRjfmG",
+        "id_funcao": 1,
+        "id_grupo": 1,
+        "instituicoes_vinculadas": [
+            1,
+            2
+        ],
+        "recebe_email": true,
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 2,
+        "nome": "Prof. Carlos Eduardo",
+        "foto": null,
+        "email": "carlos.eduardo@agendaai.com",
+        "senha": "$2y$12$SoM1rvuGXgABLtLLzmp0GexvMiRp5uyr5QjXPlUE8RNvsNInRjfmG",
+        "id_funcao": 2,
+        "id_grupo": 3,
+        "instituicoes_vinculadas": [
+            1
+        ],
+        "recebe_email": true,
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "nome": "Natan",
+        "email": "natansmak@gmail.com",
+        "id_funcao": 2,
+        "id_grupo": 3,
+        "instituicoes_vinculadas": [
+            2
+        ],
+        "recebe_email": true,
+        "senha": "$2y$10$3zOtuN69es27gJj8kvfIyuLBKWrLAucGfOIyaVLMoLGw6pDzQfuM2",
+        "id": 3,
+        "ativo": true,
+        "created_at": "2026-07-30 15:25:53",
+        "updated_at": "2026-07-30 15:26:01"
+    }
+]

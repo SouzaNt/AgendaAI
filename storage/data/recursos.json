@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nome": "Notebook Core i7 - #01",
+        "id_tipo_recurso": 1,
+        "patrimonio": "PAT-2026-001",
+        "id_instituicao_responsavel": 1,
+        "numero_serie": "SN-DELL-998811",
+        "estado": "Funcionando",
+        "historico_movimentacao": "Disponibilizado no Campus Central",
+        "disponivel_agendamento": true,
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 15:20:01"
+    },
+    {
+        "id": 2,
+        "nome": "Notebook Core i7 - #02",
+        "id_tipo_recurso": 1,
+        "patrimonio": "PAT-2026-002",
+        "id_instituicao_responsavel": 1,
+        "numero_serie": "SN-DELL-998812",
+        "estado": "Funcionando",
+        "historico_movimentacao": "Disponibilizado no Campus Central",
+        "disponivel_agendamento": true,
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 3,
+        "nome": "Projetor Datashow Epson HD",
+        "id_tipo_recurso": 2,
+        "patrimonio": "PAT-2026-003",
+        "id_instituicao_responsavel": 1,
+        "numero_serie": "SN-EPSON-3344",
+        "estado": "Funcionando",
+        "historico_movimentacao": "Alocado na Sala de Reuniões Sede",
+        "disponivel_agendamento": true,
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 4,
+        "nome": "Caixa Som JBL EON",
+        "id_tipo_recurso": 3,
+        "patrimonio": "PAT-2026-004",
+        "id_instituicao_responsavel": 2,
+        "numero_serie": "SN-JBL-7711",
+        "estado": "Não Funcionando",
+        "historico_movimentacao": "Enviado para manutenção preventiva",
+        "disponivel_agendamento": false,
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    }
+]

@@ -1,0 +1,471 @@
+[
+    {
+        "data_hora": "2026-07-30 15:18:50",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "127.0.0.1",
+        "id": 1,
+        "ativo": true,
+        "created_at": "2026-07-30 15:18:50",
+        "updated_at": "2026-07-30 15:18:50"
+    },
+    {
+        "data_hora": "2026-07-30 15:18:52",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "::1",
+        "id": 2,
+        "ativo": true,
+        "created_at": "2026-07-30 15:18:52",
+        "updated_at": "2026-07-30 15:18:52"
+    },
+    {
+        "data_hora": "2026-07-30 15:19:55",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Alteração",
+        "tabela": "recursos",
+        "valores_anteriores": {
+            "id": 1,
+            "nome": "Notebook Core i7 - #01",
+            "id_tipo_recurso": 1,
+            "patrimonio": "PAT-2026-001",
+            "id_instituicao_responsavel": 1,
+            "numero_serie": "SN-DELL-998811",
+            "estado": "Funcionando",
+            "historico_movimentacao": "Disponibilizado no Campus Central",
+            "disponivel_agendamento": true,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-07-30 00:00:00"
+        },
+        "valores_novos": {
+            "id": 1,
+            "nome": "Notebook Core i7 - #01",
+            "id_tipo_recurso": 1,
+            "patrimonio": "PAT-2026-001",
+            "id_instituicao_responsavel": 1,
+            "numero_serie": "SN-DELL-998811",
+            "estado": "Não Funcionando",
+            "historico_movimentacao": "Disponibilizado no Campus Central",
+            "disponivel_agendamento": false,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-07-30 15:19:55"
+        },
+        "ip": "::1",
+        "id": 3,
+        "ativo": true,
+        "created_at": "2026-07-30 15:19:55",
+        "updated_at": "2026-07-30 15:19:55"
+    },
+    {
+        "data_hora": "2026-07-30 15:20:01",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Alteração",
+        "tabela": "recursos",
+        "valores_anteriores": {
+            "id": 1,
+            "nome": "Notebook Core i7 - #01",
+            "id_tipo_recurso": 1,
+            "patrimonio": "PAT-2026-001",
+            "id_instituicao_responsavel": 1,
+            "numero_serie": "SN-DELL-998811",
+            "estado": "Não Funcionando",
+            "historico_movimentacao": "Disponibilizado no Campus Central",
+            "disponivel_agendamento": false,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-07-30 15:19:55"
+        },
+        "valores_novos": {
+            "id": 1,
+            "nome": "Notebook Core i7 - #01",
+            "id_tipo_recurso": 1,
+            "patrimonio": "PAT-2026-001",
+            "id_instituicao_responsavel": 1,
+            "numero_serie": "SN-DELL-998811",
+            "estado": "Funcionando",
+            "historico_movimentacao": "Disponibilizado no Campus Central",
+            "disponivel_agendamento": true,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-07-30 15:20:01"
+        },
+        "ip": "::1",
+        "id": 4,
+        "ativo": true,
+        "created_at": "2026-07-30 15:20:01",
+        "updated_at": "2026-07-30 15:20:01"
+    },
+    {
+        "data_hora": "2026-07-30 15:22:07",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Alteração",
+        "tabela": "agendamentos",
+        "valores_anteriores": {
+            "id": 2,
+            "usuario_id": 2,
+            "usuario_nome": "Prof. Carlos Eduardo",
+            "tipo_uso": "Externo",
+            "motivo": "Apresentação em Feira de Tecnologia Externa",
+            "data_inicio": "2026-07-31 13:00:00",
+            "data_fim": "2026-07-31 17:00:00",
+            "recursos_ids": [
+                2
+            ],
+            "salas_ids": [],
+            "instituicao_id": 1,
+            "observacoes": "Uso externo com justificativa aprovada.",
+            "prioridade_emergencia": false,
+            "status": "Pendente",
+            "motivo_cancelamento": null,
+            "ativo": true,
+            "created_at": "2026-07-30 08:30:00",
+            "updated_at": "2026-07-30 08:30:00"
+        },
+        "valores_novos": {
+            "id": 2,
+            "usuario_id": 2,
+            "usuario_nome": "Prof. Carlos Eduardo",
+            "tipo_uso": "Externo",
+            "motivo": "Apresentação em Feira de Tecnologia Externa",
+            "data_inicio": "2026-07-31 13:00:00",
+            "data_fim": "2026-07-31 17:00:00",
+            "recursos_ids": [
+                2
+            ],
+            "salas_ids": [],
+            "instituicao_id": 1,
+            "observacoes": "Uso externo com justificativa aprovada.",
+            "prioridade_emergencia": false,
+            "status": "Aprovado",
+            "motivo_cancelamento": null,
+            "ativo": true,
+            "created_at": "2026-07-30 08:30:00",
+            "updated_at": "2026-07-30 15:22:07"
+        },
+        "ip": "::1",
+        "id": 5,
+        "ativo": true,
+        "created_at": "2026-07-30 15:22:07",
+        "updated_at": "2026-07-30 15:22:07"
+    },
+    {
+        "data_hora": "2026-07-30 15:25:53",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Inclusão",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "nome": "Natan",
+            "email": "natansmak@gmail.com",
+            "id_funcao": 2,
+            "id_grupo": 3,
+            "instituicoes_vinculadas": [
+                2
+            ],
+            "recebe_email": true,
+            "senha": "$2y$10$6p5Znwy6XVLRVAlBkJKXhOyl0qUNis1\/IUG24T4PgIpio9dt\/zSPO",
+            "id": 3,
+            "ativo": true,
+            "created_at": "2026-07-30 15:25:53",
+            "updated_at": "2026-07-30 15:25:53"
+        },
+        "ip": "::1",
+        "id": 6,
+        "ativo": true,
+        "created_at": "2026-07-30 15:25:53",
+        "updated_at": "2026-07-30 15:25:53"
+    },
+    {
+        "data_hora": "2026-07-30 15:26:01",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Alteração",
+        "tabela": "funcionarios",
+        "valores_anteriores": {
+            "nome": "Natan",
+            "email": "natansmak@gmail.com",
+            "id_funcao": 2,
+            "id_grupo": 3,
+            "instituicoes_vinculadas": [
+                2
+            ],
+            "recebe_email": true,
+            "senha": "$2y$10$6p5Znwy6XVLRVAlBkJKXhOyl0qUNis1\/IUG24T4PgIpio9dt\/zSPO",
+            "id": 3,
+            "ativo": true,
+            "created_at": "2026-07-30 15:25:53",
+            "updated_at": "2026-07-30 15:25:53"
+        },
+        "valores_novos": {
+            "nome": "Natan",
+            "email": "natansmak@gmail.com",
+            "id_funcao": 2,
+            "id_grupo": 3,
+            "instituicoes_vinculadas": [
+                2
+            ],
+            "recebe_email": true,
+            "senha": "$2y$10$3zOtuN69es27gJj8kvfIyuLBKWrLAucGfOIyaVLMoLGw6pDzQfuM2",
+            "id": 3,
+            "ativo": true,
+            "created_at": "2026-07-30 15:25:53",
+            "updated_at": "2026-07-30 15:26:01"
+        },
+        "ip": "::1",
+        "id": 7,
+        "ativo": true,
+        "created_at": "2026-07-30 15:26:01",
+        "updated_at": "2026-07-30 15:26:01"
+    },
+    {
+        "data_hora": "2026-07-30 15:26:01",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Reset de Senha pelo Admin",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "id": 3,
+            "nova_senha": "123456"
+        },
+        "ip": "::1",
+        "id": 8,
+        "ativo": true,
+        "created_at": "2026-07-30 15:26:01",
+        "updated_at": "2026-07-30 15:26:01"
+    },
+    {
+        "data_hora": "2026-07-30 15:26:03",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "::1",
+        "id": 9,
+        "ativo": true,
+        "created_at": "2026-07-30 15:26:03",
+        "updated_at": "2026-07-30 15:26:03"
+    },
+    {
+        "data_hora": "2026-07-30 15:26:28",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "natansmak@gmail.com"
+        },
+        "ip": "::1",
+        "id": 10,
+        "ativo": true,
+        "created_at": "2026-07-30 15:26:28",
+        "updated_at": "2026-07-30 15:26:28"
+    },
+    {
+        "data_hora": "2026-07-30 15:37:14",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Inclusão",
+        "tabela": "agendamentos",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "usuario_id": 3,
+            "usuario_nome": "Natan",
+            "tipo_uso": "Unidade",
+            "motivo": "",
+            "data_inicio": "2026-07-31 14:30:00",
+            "data_fim": "2026-07-31 18:30:00",
+            "recursos_ids": [
+                1,
+                3
+            ],
+            "salas_ids": [],
+            "instituicao_id": 2,
+            "observacoes": "",
+            "prioridade_emergencia": false,
+            "status": "Pendente",
+            "motivo_cancelamento": null,
+            "id": 3,
+            "ativo": true,
+            "created_at": "2026-07-30 15:37:14",
+            "updated_at": "2026-07-30 15:37:14"
+        },
+        "ip": "::1",
+        "id": 11,
+        "ativo": true,
+        "created_at": "2026-07-30 15:37:14",
+        "updated_at": "2026-07-30 15:37:14"
+    },
+    {
+        "data_hora": "2026-07-30 15:37:38",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "::1",
+        "id": 12,
+        "ativo": true,
+        "created_at": "2026-07-30 15:37:38",
+        "updated_at": "2026-07-30 15:37:38"
+    },
+    {
+        "data_hora": "2026-07-30 15:37:44",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "::1",
+        "id": 13,
+        "ativo": true,
+        "created_at": "2026-07-30 15:37:44",
+        "updated_at": "2026-07-30 15:37:44"
+    },
+    {
+        "data_hora": "2026-07-30 15:41:44",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Alteração",
+        "tabela": "agendamentos",
+        "valores_anteriores": {
+            "usuario_id": 3,
+            "usuario_nome": "Natan",
+            "tipo_uso": "Unidade",
+            "motivo": "",
+            "data_inicio": "2026-07-31 14:30:00",
+            "data_fim": "2026-07-31 18:30:00",
+            "recursos_ids": [
+                1,
+                3
+            ],
+            "salas_ids": [],
+            "instituicao_id": 2,
+            "observacoes": "",
+            "prioridade_emergencia": false,
+            "status": "Pendente",
+            "motivo_cancelamento": null,
+            "id": 3,
+            "ativo": true,
+            "created_at": "2026-07-30 15:37:14",
+            "updated_at": "2026-07-30 15:37:14"
+        },
+        "valores_novos": {
+            "usuario_id": 3,
+            "usuario_nome": "Natan",
+            "tipo_uso": "Unidade",
+            "motivo": "",
+            "data_inicio": "2026-07-31 14:30:00",
+            "data_fim": "2026-07-31 18:30:00",
+            "recursos_ids": [
+                1,
+                3
+            ],
+            "salas_ids": [],
+            "instituicao_id": 2,
+            "observacoes": "",
+            "prioridade_emergencia": false,
+            "status": "Aprovado",
+            "motivo_cancelamento": null,
+            "id": 3,
+            "ativo": true,
+            "created_at": "2026-07-30 15:37:14",
+            "updated_at": "2026-07-30 15:41:44"
+        },
+        "ip": "::1",
+        "id": 14,
+        "ativo": true,
+        "created_at": "2026-07-30 15:41:44",
+        "updated_at": "2026-07-30 15:41:44"
+    },
+    {
+        "data_hora": "2026-07-30 15:47:31",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "::1",
+        "id": 15,
+        "ativo": true,
+        "created_at": "2026-07-30 15:47:31",
+        "updated_at": "2026-07-30 15:47:31"
+    },
+    {
+        "data_hora": "2026-07-30 15:47:36",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "natansmak@gmail.com"
+        },
+        "ip": "::1",
+        "id": 16,
+        "ativo": true,
+        "created_at": "2026-07-30 15:47:36",
+        "updated_at": "2026-07-30 15:47:36"
+    },
+    {
+        "data_hora": "2026-07-30 15:50:23",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Inclusão",
+        "tabela": "agendamentos",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "usuario_id": 3,
+            "usuario_nome": "Natan",
+            "tipo_uso": "Unidade",
+            "motivo": "",
+            "data_inicio": "2026-08-21 14:30:00",
+            "data_fim": "2026-08-21 18:20:00",
+            "recursos_ids": [
+                1,
+                2
+            ],
+            "salas_ids": [],
+            "instituicao_id": 2,
+            "observacoes": "",
+            "prioridade_emergencia": false,
+            "status": "Pendente",
+            "motivo_cancelamento": null,
+            "id": 4,
+            "ativo": true,
+            "created_at": "2026-07-30 15:50:23",
+            "updated_at": "2026-07-30 15:50:23"
+        },
+        "ip": "::1",
+        "id": 17,
+        "ativo": true,
+        "created_at": "2026-07-30 15:50:23",
+        "updated_at": "2026-07-30 15:50:23"
+    }
+]

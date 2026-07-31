@@ -1,0 +1,4 @@
+[
+    { "id": 1, "nome": "Paulista", "id_tipo_logradouro": 2, "ativo": true },
+    { "id": 2, "nome": "Engenheiro Luís Carlos Berrini", "id_tipo_logradouro": 1, "ativo": true }
+]

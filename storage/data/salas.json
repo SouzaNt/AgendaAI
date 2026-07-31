@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nome": "Auditório Principal (Capacidade: 150 pessoas)",
+        "id_instituicao_vinculada": 1,
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 2,
+        "nome": "Laboratório de Informática 01",
+        "id_instituicao_vinculada": 1,
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "id": 3,
+        "nome": "Sala de Reuniões Diretoria",
+        "id_instituicao_vinculada": 2,
+        "ativo": true,
+        "created_at": "2026-07-30 00:00:00",
+        "updated_at": "2026-07-30 00:00:00"
+    }
+]

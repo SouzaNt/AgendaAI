@@ -1,0 +1,5 @@
+[
+    { "id": 1, "nome": "São Paulo", "uf": "SP", "ativo": true },
+    { "id": 2, "nome": "Rio de Janeiro", "uf": "RJ", "ativo": true },
+    { "id": 3, "nome": "Minas Gerais", "uf": "MG", "ativo": true }
+]
