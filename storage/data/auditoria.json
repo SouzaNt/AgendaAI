@@ -1588,5 +1588,19 @@
         "ativo": true,
         "created_at": "2026-07-31 18:08:15",
         "updated_at": "2026-07-31 18:08:15"
+    },
+    {
+        "data_hora": "2026-07-31 18:17:16",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "::1",
+        "id": 59,
+        "ativo": true,
+        "created_at": "2026-07-31 18:17:16",
+        "updated_at": "2026-07-31 18:17:16"
     }
 ]
