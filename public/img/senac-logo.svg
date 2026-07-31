@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" width="300" height="120">
+  <g transform="translate(100, 5)">
+    <path d="M 12 28 C 30 10 58 4 82 14 C 60 20 38 24 18 32 Z" fill="#004b87"/>
+    <path d="M -30 48 C 15 30 50 26 92 32 C 68 39 30 46 -6 52 Z" fill="#f37021"/>
+    <path d="M -32 50 C -28 32 -14 20 -2 10 C -12 20 -20 32 -26 46 Z" fill="#f89734"/>
+  </g>
+  <text x="10" y="105" font-family="'Inter', system-ui, -apple-system, sans-serif" font-weight="900" font-size="72" fill="#004b87" letter-spacing="-2">Senac</text>
+</svg>

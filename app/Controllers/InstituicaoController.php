@@ -25,6 +25,7 @@ class InstituicaoController extends Controller {
         $bairro = trim($data['bairro'] ?? '');
         $logradouro = trim($data['logradouro_completo'] ?? '');
         $numero = trim($data['numero'] ?? '');
+        $estado = strtoupper(trim($data['estado'] ?? ''));
 
         if (empty($nome)) {
             return $this->json(['success' => false, 'message' => 'Informe o nome da Instituição/Unidade.']);
@@ -36,7 +37,8 @@ class InstituicaoController extends Controller {
             'municipio' => $municipio,
             'bairro' => $bairro,
             'logradouro_completo' => $logradouro,
-            'numero' => $numero
+            'numero' => $numero,
+            'estado' => $estado
         ];
 
         if ($id) {

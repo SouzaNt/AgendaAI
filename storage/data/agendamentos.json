@@ -81,11 +81,32 @@
         "instituicao_id": 2,
         "observacoes": "",
         "prioridade_emergencia": false,
-        "status": "Pendente",
+        "status": "Aprovado",
         "motivo_cancelamento": null,
         "id": 4,
         "ativo": true,
         "created_at": "2026-07-30 15:50:23",
-        "updated_at": "2026-07-30 15:50:23"
+        "updated_at": "2026-07-31 14:43:46"
+    },
+    {
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "tipo_uso": "Unidade",
+        "motivo": "Absolutamente nenhum",
+        "data_inicio": "2026-08-21 08:00:00",
+        "data_fim": "2026-08-21 12:00:00",
+        "recursos_ids": [],
+        "salas_ids": [
+            2
+        ],
+        "instituicao_id": 1,
+        "observacoes": "",
+        "prioridade_emergencia": false,
+        "status": "Aprovado",
+        "motivo_cancelamento": null,
+        "id": 5,
+        "ativo": true,
+        "created_at": "2026-07-31 14:50:10",
+        "updated_at": "2026-07-31 15:05:42"
     }
 ]

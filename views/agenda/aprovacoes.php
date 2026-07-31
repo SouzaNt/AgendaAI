@@ -1,11 +1,11 @@
 <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
     <div>
         <h3 class="fw-bold mb-1"><i class="fa-solid fa-clipboard-check text-warning me-2"></i> Módulo de Aprovação de Agendamentos</h3>
-        <p class="text-muted mb-0">Centralize a análise, aprovação ou recusa de solicitações de salas e equipamentos.</p>
+        <p class="text-muted mb-0">Centralize a análise, aprovação ou recusa de solicitações por instituição/unidade.</p>
     </div>
 
     <span class="badge bg-warning text-dark fs-6 px-4 py-2 rounded-pill shadow-sm">
-        <i class="fa-solid fa-clock-rotate-left me-1"></i> <?= count($agendamentosPendentes) ?> Solicitação(ões) Pendente(s)
+        <i class="fa-solid fa-clock-rotate-left me-1"></i> <span id="badge-count-pendentes"><?= count($agendamentosPendentes) ?></span> Solicitação(ões) Pendente(s)
     </span>
 </div>
 
@@ -20,11 +20,32 @@
     </div>
 <?php endif; ?>
 
+<!-- Filtro de Unidade / Instituição -->
+<div class="card card-glass border-0 p-3 mb-4">
+    <div class="row align-items-center">
+        <div class="col-12 col-md-3">
+            <label for="filtro-inst-aprovacoes" class="form-label fw-semibold mb-md-0">
+                <i class="fa-solid fa-building-columns text-primary me-2"></i> Filtrar por Unidade:
+            </label>
+        </div>
+        <div class="col-12 col-md-9">
+            <select class="form-select select2" id="filtro-inst-aprovacoes" onchange="filtrarAprovacoesPorInstituicao()">
+                <option value="">Todas as Instituições / Unidades</option>
+                <?php if (!empty($instituicoes)): ?>
+                    <?php foreach ($instituicoes as $inst): ?>
+                        <option value="<?= $inst['id'] ?>"><?= htmlspecialchars($inst['nome']) ?></option>
+                    <?php endforeach; ?>
+                <?php endif; ?>
+            </select>
+        </div>
+    </div>
+</div>
+
 <!-- Abas: Fila de Análise vs Histórico -->
 <ul class="nav nav-pills mb-4 gap-2">
     <li class="nav-item">
         <button class="nav-link active rounded-pill px-4" data-bs-toggle="pill" data-bs-target="#tab-pendentes">
-            Fila de Análise (Pendentes) <span class="badge bg-danger ms-2"><?= count($agendamentosPendentes) ?></span>
+            Fila de Análise (Pendentes)
         </button>
     </li>
     <li class="nav-item">
@@ -46,16 +67,34 @@
                 <p class="text-muted mb-0">Não há solicitações pendentes de análise no momento.</p>
             </div>
         <?php else: ?>
-            <div class="row g-4">
+            <div class="card card-glass border-0 p-5 text-center d-none mb-4" id="msg-nenhum-pendente-filtro">
+                <div class="stat-icon blue mx-auto mb-3" style="width: 64px; height: 64px; font-size: 2rem;">
+                    <i class="fa-solid fa-filter"></i>
+                </div>
+                <h4 class="fw-bold text-primary">Nenhuma Solicitação Pendente para esta Unidade</h4>
+                <p class="text-muted mb-0">Não há pedidos aguardando análise referente à instituição selecionada.</p>
+            </div>
+
+            <div class="row g-4" id="grid-pendentes-aprovacao">
                 <?php foreach ($agendamentosPendentes as $ag): ?>
-                <div class="col-12 col-lg-6">
+                <?php 
+                    $instObj = JsonDatabase::findById('instituicoes', $ag['instituicao_id']);
+                    $instNome = $instObj['nome'] ?? 'Unidade Geral';
+                ?>
+                <div class="col-12 col-lg-6 card-aprovacao-item" data-instituicao-id="<?= $ag['instituicao_id'] ?>">
                     <div class="card card-glass border-0 h-100 p-4 shadow-sm">
                         <div class="d-flex justify-content-between align-items-start mb-3">
                             <div>
-                                <span class="badge bg-warning text-dark mb-1">Pendente de Aprovação</span>
+                                <span class="badge bg-warning text-dark mb-1 me-1">Pendente de Aprovação</span>
                                 <h5 class="fw-bold mb-0">Solicitação #<?= $ag['id'] ?></h5>
                             </div>
                             <small class="text-muted"><?= date('d/m/Y H:i', strtotime($ag['created_at'] ?? $ag['data_inicio'])) ?></small>
+                        </div>
+
+                        <div class="mb-2">
+                            <span class="badge bg-primary-subtle text-primary border border-primary-subtle p-2">
+                                <i class="fa-solid fa-building-columns me-1"></i> <?= htmlspecialchars($instNome) ?>
+                            </span>
                         </div>
 
                         <div class="mb-3">
@@ -106,7 +145,7 @@
                         <?php if (!empty($ag['motivo'])): ?>
                             <div class="mb-3">
                                 <label class="form-label fw-semibold small text-muted mb-0">Motivo / Justificativa:</label>
-                                <p class="mb-0 small text-body bg-light p-2 rounded">"<?= htmlspecialchars($ag['motivo']) ?>"</p>
+                                <p class="mb-0 small text-body bg-body-tertiary p-2 rounded border border-secondary-subtle">"<?= htmlspecialchars($ag['motivo']) ?>"</p>
                             </div>
                         <?php endif; ?>
 
@@ -130,11 +169,12 @@
     <div class="tab-pane fade" id="tab-historico">
         <div class="card card-glass border-0 p-4">
             <div class="table-responsive">
-                <table class="table table-hover align-middle datatable">
+                <table class="table table-hover align-middle datatable" id="tabela-historico-aprovacoes">
                     <thead>
                         <tr>
                             <th>ID</th>
                             <th>Requisitante</th>
+                            <th>Unidade / Instituição</th>
                             <th>Data / Período</th>
                             <th>Status</th>
                             <th>Tipo de Uso</th>
@@ -143,9 +183,18 @@
                     </thead>
                     <tbody>
                         <?php foreach ($historicoAgendamentos as $hAg): ?>
+                        <?php 
+                            $hInstObj = JsonDatabase::findById('instituicoes', $hAg['instituicao_id']);
+                            $hInstNome = $hInstObj['nome'] ?? 'Unidade Geral';
+                        ?>
                         <tr>
                             <td><strong>#<?= $hAg['id'] ?></strong></td>
                             <td><strong class="text-primary"><?= htmlspecialchars($hAg['usuario_nome']) ?></strong></td>
+                            <td>
+                                <span class="badge bg-primary-subtle text-primary border border-primary-subtle">
+                                    <i class="fa-solid fa-building-columns me-1"></i> <?= htmlspecialchars($hInstNome) ?>
+                                </span>
+                            </td>
                             <td>
                                 <small class="d-block fw-semibold"><?= date('d/m/Y H:i', strtotime($hAg['data_inicio'])) ?></small>
                                 <small class="text-muted">até <?= date('H:i', strtotime($hAg['data_fim'])) ?></small>
@@ -177,6 +226,39 @@
 </div>
 
 <script>
+function filtrarAprovacoesPorInstituicao() {
+    const instId = $('#filtro-inst-aprovacoes').val();
+    let visivelCount = 0;
+
+    $('.card-aprovacao-item').each(function() {
+        const itemInst = $(this).data('instituicao-id');
+        if (!instId || String(itemInst) === String(instId)) {
+            $(this).removeClass('d-none');
+            visivelCount++;
+        } else {
+            $(this).addClass('d-none');
+        }
+    });
+
+    $('#badge-count-pendentes').text(visivelCount);
+
+    if (visivelCount === 0 && $('.card-aprovacao-item').length > 0) {
+        $('#msg-nenhum-pendente-filtro').removeClass('d-none');
+    } else {
+        $('#msg-nenhum-pendente-filtro').addClass('d-none');
+    }
+
+    if ($.fn.DataTable && $.fn.DataTable.isDataTable('#tabela-historico-aprovacoes')) {
+        const table = $('#tabela-historico-aprovacoes').DataTable();
+        if (instId) {
+            const selectedText = $('#filtro-inst-aprovacoes option:selected').text().trim();
+            table.column(2).search(selectedText).draw();
+        } else {
+            table.column(2).search('').draw();
+        }
+    }
+}
+
 function aprovarAgendamento(id, status) {
     sendAjaxRequest(BASE_URL + '/api/agenda/aprovar', { id: id, status: status });
 }

@@ -1,5 +1,11 @@
 [
     { "id": 1, "nome": "São Paulo", "uf": "SP", "ativo": true },
     { "id": 2, "nome": "Rio de Janeiro", "uf": "RJ", "ativo": true },
-    { "id": 3, "nome": "Minas Gerais", "uf": "MG", "ativo": true }
+    { "id": 3, "nome": "Minas Gerais", "uf": "MG", "ativo": true },
+    { "id": 4, "nome": "Espírito Santo", "uf": "ES", "ativo": true },
+    { "id": 5, "nome": "Distrito Federal", "uf": "DF", "ativo": true },
+    { "id": 6, "nome": "Pernambuco", "uf": "PE", "ativo": true },
+    { "id": 7, "nome": "Rio Grande do Sul", "uf": "RS", "ativo": true },
+    { "id": 8, "nome": "Paraná", "uf": "PR", "ativo": true },
+    { "id": 9, "nome": "Amazonas", "uf": "AM", "ativo": true }
 ]

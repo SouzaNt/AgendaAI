@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 <div class="mb-3">
                     <label class="form-label fw-bold text-muted small mb-1"><i class="fa-solid fa-boxes-stacked me-1 text-primary"></i> Recurso(s) / Sala(s) Agendado(s):</label>
-                    <div class="p-2 bg-light rounded-3">
+                    <div class="p-2 bg-body-tertiary rounded-3 border border-secondary-subtle">
                         ${itensHtml}
                     </div>
                 </div>
@@ -101,13 +101,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 ${props.motivo ? `
                 <div class="mb-2">
                     <label class="form-label fw-bold text-muted small mb-1"><i class="fa-solid fa-comment-dots me-1 text-primary"></i> Motivo / Justificativa:</label>
-                    <p class="mb-0 small text-body bg-light p-2 rounded border">"${props.motivo}"</p>
+                    <p class="mb-0 small text-body bg-body-tertiary p-2 rounded border border-secondary-subtle">"${props.motivo}"</p>
                 </div>` : ''}
 
                 ${props.observacoes ? `
                 <div class="mb-2">
                     <label class="form-label fw-bold text-muted small mb-1"><i class="fa-solid fa-note-sticky me-1 text-secondary"></i> Observações:</label>
-                    <p class="mb-0 small text-muted bg-light p-2 rounded border">${props.observacoes}</p>
+                    <p class="mb-0 small text-body bg-body-tertiary p-2 rounded border border-secondary-subtle">${props.observacoes}</p>
                 </div>` : ''}
             `;
 

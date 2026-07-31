@@ -17,7 +17,7 @@
                     <th>ID</th>
                     <th>Nome da Instituição</th>
                     <th>Unidade Pai</th>
-                    <th>Município / Bairro</th>
+                    <th>Município / UF / Bairro</th>
                     <th>Logradouro Completo</th>
                     <th>Ações</th>
                 </tr>
@@ -37,7 +37,11 @@
                             }
                         ?>
                     </td>
-                    <td><?= htmlspecialchars($inst['municipio'] ?? '') ?> / <?= htmlspecialchars($inst['bairro'] ?? '') ?></td>
+                    <td>
+                        <?= htmlspecialchars($inst['municipio'] ?? '') ?> 
+                        <?= !empty($inst['estado']) ? ' (' . htmlspecialchars($inst['estado']) . ')' : '' ?> / 
+                        <?= htmlspecialchars($inst['bairro'] ?? '') ?>
+                    </td>
                     <td><?= htmlspecialchars($inst['logradouro_completo'] ?? '') ?>, <?= htmlspecialchars($inst['numero'] ?? '') ?></td>
                     <td>
                         <button class="btn btn-sm btn-outline-primary rounded-pill me-1" onclick='editarInstituicao(<?= json_encode($inst) ?>)'>
@@ -79,11 +83,15 @@
                         </select>
                     </div>
                     <div class="row g-2 mb-3">
-                        <div class="col-6">
+                        <div class="col-5">
                             <label class="form-label fw-semibold">Município</label>
                             <input type="text" class="form-control" id="inst-municipio" placeholder="São Paulo">
                         </div>
-                        <div class="col-6">
+                        <div class="col-3">
+                            <label class="form-label fw-semibold">Estado (UF)</label>
+                            <input type="text" class="form-control text-uppercase" id="inst-estado" maxlength="2" placeholder="SP">
+                        </div>
+                        <div class="col-4">
                             <label class="form-label fw-semibold">Bairro</label>
                             <input type="text" class="form-control" id="inst-bairro" placeholder="Centro">
                         </div>
@@ -113,6 +121,7 @@ function abrirModalInstituicao() {
     $('#inst-id').val('');
     $('#inst-nome').val('');
     $('#inst-municipio').val('');
+    $('#inst-estado').val('');
     $('#inst-bairro').val('');
     $('#inst-logradouro').val('');
     $('#inst-numero').val('');
@@ -125,6 +134,7 @@ function editarInstituicao(inst) {
     $('#inst-nome').val(inst.nome);
     $('#inst-pai').val(inst.unidade_pai || '');
     $('#inst-municipio').val(inst.municipio || '');
+    $('#inst-estado').val(inst.estado || '');
     $('#inst-bairro').val(inst.bairro || '');
     $('#inst-logradouro').val(inst.logradouro_completo || '');
     $('#inst-numero').val(inst.numero || '');
@@ -139,6 +149,7 @@ $('#form-instituicao').on('submit', function(e) {
         nome: $('#inst-nome').val(),
         unidade_pai: $('#inst-pai').val(),
         municipio: $('#inst-municipio').val(),
+        estado: $('#inst-estado').val(),
         bairro: $('#inst-bairro').val(),
         logradouro_completo: $('#inst-logradouro').val(),
         numero: $('#inst-numero').val()

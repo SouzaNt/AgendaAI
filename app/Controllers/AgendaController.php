@@ -52,6 +52,7 @@ class AgendaController extends Controller {
 
         $agendamentos = AgendamentoModel::getAll();
         $config = ConfiguracaoModel::getConfig();
+        $instituicoes = InstituicaoModel::getAll();
 
         usort($agendamentos, function ($a, $b) {
             return strtotime($b['created_at'] ?? '0') - strtotime($a['created_at'] ?? '0');
@@ -68,6 +69,7 @@ class AgendaController extends Controller {
         $this->render('agenda/aprovacoes', [
             'agendamentosPendentes' => $pendentes,
             'historicoAgendamentos' => $historico,
+            'instituicoes' => $instituicoes,
             'config' => $config
         ]);
     }

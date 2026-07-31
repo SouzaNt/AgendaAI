@@ -2,23 +2,23 @@
     {
         "id": 1,
         "tolerancia_minutos": 15,
-        "antecedencia_horas": 1,
+        "antecedencia_horas": 24,
         "smtp_servidor": "smtp.agendaai.local",
         "smtp_porta": 587,
         "smtp_usuario": "notificacoes@agendaai.local",
         "flags_email": true,
         "agendamento_direto": false,
-        "limite_itens_usuario": 5,
-        "duracao_maxima_horas": 8,
-        "prazo_cancelamento_horas": 2,
+        "limite_itens_usuario": 50,
+        "duracao_maxima_horas": 10,
+        "prazo_cancelamento_horas": 0,
         "horario_abertura": "07:00",
         "horario_fechamento": "22:00",
         "nivel_visibilidade": "Publico",
         "justificativa_cancelamento_obrigatoria": true,
-        "agendamento_massa_habilitado": true,
+        "agendamento_massa_habilitado": false,
         "limite_dias_agendamento_massa": 30,
         "ativo": true,
         "created_at": "2026-07-30 00:00:00",
-        "updated_at": "2026-07-30 00:00:00"
+        "updated_at": "2026-07-31 14:48:06"
     }
 ]

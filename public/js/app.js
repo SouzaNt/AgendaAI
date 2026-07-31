@@ -21,6 +21,19 @@ $(document).ready(function () {
         }
     }
 
+    // 1.b Alternador de Menu Sidebar para dispositivos móveis
+    $('#sidebar-toggle-btn, #sidebar-close-btn, #sidebar-backdrop').on('click', function () {
+        $('.sidebar').toggleClass('show');
+        $('#sidebar-backdrop').toggleClass('show');
+    });
+
+    $('.sidebar-nav .nav-link').on('click', function () {
+        if ($(window).width() < 992) {
+            $('.sidebar').removeClass('show');
+            $('#sidebar-backdrop').removeClass('show');
+        }
+    });
+
     // 2. Inicialização do DataTables em Português (Brasil)
     if ($.fn.DataTable) {
         $('.datatable').DataTable({

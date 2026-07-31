@@ -4,7 +4,7 @@
         "nome": "Administrador do Sistema",
         "foto": null,
         "email": "admin@agendaai.com",
-        "senha": "$2y$12$SoM1rvuGXgABLtLLzmp0GexvMiRp5uyr5QjXPlUE8RNvsNInRjfmG",
+        "senha": "$2y$10$3fjN9gdTeP2Y5KCn.OpfJ.qD5DwhdH9m8FJygxgb5qcbFbAnjhzyu",
         "id_funcao": 1,
         "id_grupo": 1,
         "instituicoes_vinculadas": [
@@ -14,14 +14,14 @@
         "recebe_email": true,
         "ativo": true,
         "created_at": "2026-07-30 00:00:00",
-        "updated_at": "2026-07-30 00:00:00"
+        "updated_at": "2026-07-31 17:12:53"
     },
     {
         "id": 2,
-        "nome": "Prof. Carlos Eduardo",
+        "nome": "Prof.Lucas",
         "foto": null,
-        "email": "carlos.eduardo@agendaai.com",
-        "senha": "$2y$12$SoM1rvuGXgABLtLLzmp0GexvMiRp5uyr5QjXPlUE8RNvsNInRjfmG",
+        "email": "Lucas@agendaai.com",
+        "senha": "$2y$10$uuMyTq2cDNs4McUuzIuEUen8kE\/YGv4p4bZOazW6IvOU9Wh\/lu43.",
         "id_funcao": 2,
         "id_grupo": 3,
         "instituicoes_vinculadas": [
@@ -30,21 +30,36 @@
         "recebe_email": true,
         "ativo": true,
         "created_at": "2026-07-30 00:00:00",
-        "updated_at": "2026-07-30 00:00:00"
+        "updated_at": "2026-07-31 17:12:56"
     },
     {
         "nome": "Natan",
         "email": "natansmak@gmail.com",
-        "id_funcao": 2,
-        "id_grupo": 3,
+        "id_funcao": 4,
+        "id_grupo": 1,
         "instituicoes_vinculadas": [
-            2
+            4
         ],
         "recebe_email": true,
-        "senha": "$2y$10$3zOtuN69es27gJj8kvfIyuLBKWrLAucGfOIyaVLMoLGw6pDzQfuM2",
+        "senha": "$2y$10$7.d2.WT.eOG4f.ke3EzehOwU\/X0l7tYlZuApblY.b8BDfdK.XaOS.",
         "id": 3,
         "ativo": true,
         "created_at": "2026-07-30 15:25:53",
-        "updated_at": "2026-07-30 15:26:01"
+        "updated_at": "2026-07-31 17:12:58"
+    },
+    {
+        "nome": "Keylane",
+        "email": "keylane@agendaai.com",
+        "id_funcao": 3,
+        "id_grupo": 2,
+        "instituicoes_vinculadas": [
+            4
+        ],
+        "recebe_email": true,
+        "senha": "$2y$10$IG6VIrhAxyfEQ48lQZwJMOQaAF6uqGd.oPGhh6DPa6ka\/fPxGK58e",
+        "id": 4,
+        "ativo": true,
+        "created_at": "2026-07-31 17:06:59",
+        "updated_at": "2026-07-31 18:06:49"
     }
 ]

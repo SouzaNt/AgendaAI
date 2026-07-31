@@ -24,5 +24,18 @@
         "ativo": true,
         "created_at": "2026-07-30 15:50:23",
         "updated_at": "2026-07-30 15:50:23"
+    },
+    {
+        "destinatario_email": "admin@agendaai.com",
+        "destinatario_nome": "Administrador do Sistema",
+        "assunto": "Solicitação de Agendamento #5 - AgendaAI",
+        "corpo": "<p>Sua reserva foi cadastrada com sucesso! Status atual: <strong>Pendente<\/strong>.<\/p>",
+        "tipo_evento": "Agendamento",
+        "data_envio": "2026-07-31 14:50:10",
+        "status": "Enviado (Simulado)",
+        "id": 3,
+        "ativo": true,
+        "created_at": "2026-07-31 14:50:10",
+        "updated_at": "2026-07-31 14:50:10"
     }
 ]

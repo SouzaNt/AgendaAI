@@ -8,7 +8,7 @@ $currentRoute = $_GET['route'] ?? 'dashboard';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgendaAI - Sistema de Agendamento de Recursos</title>
+    <title>Senac AgendaAI - Gestão de Recursos e Ambientes</title>
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -48,14 +48,21 @@ $currentRoute = $_GET['route'] ?? 'dashboard';
 </head>
 <body>
 
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
 <div class="app-wrapper">
     <!-- Sidebar Menu -->
     <aside class="sidebar">
-        <div class="sidebar-header">
-            <div class="stat-icon blue" style="width: 36px; height: 36px; font-size: 1rem;">
-                <i class="fa-solid fa-calendar-check"></i>
+        <div class="sidebar-header d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center gap-2">
+                <img src="<?= BASE_URL ?>/public/img/senac-logo-white.svg" alt="Logo Senac" style="height: 36px;" class="img-fluid">
+                <a href="<?= BASE_URL ?>/dashboard" class="sidebar-brand text-decoration-none ms-1">
+                    <strong style="color: #ffffff; font-size: 1.15rem;">Agenda<span style="color: #f37021;">AI</span></strong>
+                </a>
             </div>
-            <a href="<?= BASE_URL ?>/dashboard" class="sidebar-brand">Agenda<strong>AI</strong></a>
+            <button type="button" class="btn text-white-50 d-lg-none p-1" id="sidebar-close-btn">
+                <i class="fa-solid fa-xmark fs-4"></i>
+            </button>
         </div>
 
         <nav class="sidebar-nav">
@@ -138,8 +145,11 @@ $currentRoute = $_GET['route'] ?? 'dashboard';
     <main class="main-content">
         <!-- Top Bar Header -->
         <header class="top-bar">
-            <div class="d-flex align-items-center gap-3">
-                <span class="fs-5 font-monospace fw-semibold text-secondary">
+            <div class="d-flex align-items-center gap-2">
+                <button type="button" class="btn btn-outline-secondary border-0 d-lg-none p-1 me-1" id="sidebar-toggle-btn" title="Abrir Menu">
+                    <i class="fa-solid fa-bars fs-4"></i>
+                </button>
+                <span class="fs-6 fs-md-5 font-monospace fw-semibold text-secondary">
                     <i class="fa-solid fa-clock opacity-50 me-1"></i> <?= date('d/m/Y') ?>
                 </span>
             </div>
