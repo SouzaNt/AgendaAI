@@ -16,9 +16,14 @@ if ($baseUrl === '' || $baseUrl === '/') {
     $baseUrl = '';
 }
 define('BASE_URL', $baseUrl);
+define('APP_SECRET', 'SenacAgendaAI_Secret_Key_2026_Secure_Hash_v1');
 
-// Inicia sessão com segurança se ainda não iniciada
+require_once ROOT_PATH . '/core/Crypto.php';
+
+// Inicia sessão com configurações seguras de cookie se ainda não iniciada
 if (session_status() === PHP_SESSION_NONE) {
+    ini_set('session.cookie_httponly', 1);
+    ini_set('session.use_only_cookies', 1);
     session_start();
 }
 

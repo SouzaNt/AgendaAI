@@ -38,7 +38,6 @@ $currentRoute = $_GET['route'] ?? 'dashboard';
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/6.0.0/bootbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.css"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core/locales/pt-br.global.min.js"></script>
 

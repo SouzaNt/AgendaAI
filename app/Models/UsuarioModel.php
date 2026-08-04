@@ -12,7 +12,7 @@ class UsuarioModel extends Model {
     }
 
     public static function resetPasswordToDefault($id) {
-        $defaultPassword = password_hash('123456', PASSWORD_DEFAULT);
+        $defaultPassword = Crypto::hashPassword('123456');
         return self::update($id, ['senha' => $defaultPassword]);
     }
 }

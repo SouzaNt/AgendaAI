@@ -22,5 +22,13 @@
         "ativo": true,
         "created_at": "2026-07-30 00:00:00",
         "updated_at": "2026-07-30 00:00:00"
+    },
+    {
+        "nome": "Sala 4",
+        "id_instituicao_vinculada": 4,
+        "id": 4,
+        "ativo": true,
+        "created_at": "2026-08-04 16:10:00",
+        "updated_at": "2026-08-04 16:10:00"
     }
 ]

@@ -31,6 +31,7 @@ $router->post('api/agenda/feedback', 'AgendaController', 'salvarFeedback');
 $router->get('recursos', 'RecursoController', 'index');
 $router->post('api/recursos/store', 'RecursoController', 'store');
 $router->post('api/recursos/estado', 'RecursoController', 'alterarEstado');
+$router->post('api/recursos/toggle-manutencao', 'RecursoController', 'alterarEstado');
 $router->post('api/recursos/delete', 'RecursoController', 'delete');
 
 // Salas de Aula
@@ -77,7 +78,19 @@ $router->get('relatorios/pdf', 'RelatorioController', 'exportarPDF');
 $router->get('auditoria', 'AuditController', 'index');
 
 // Despacho da Rota
-$route = $_GET['route'] ?? '';
-$requestMethod = $_SERVER['REQUEST_METHOD'];
+$route = $_GET['route'] ?? null;
+if ($route === null) {
+    $requestUri = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH) ?? '';
+    $scriptDir = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? ''));
+    $scriptDir = rtrim($scriptDir, '/');
+    if (!empty($scriptDir) && strpos($requestUri, $scriptDir) === 0) {
+        $requestUri = substr($requestUri, strlen($scriptDir));
+    }
+    $route = trim($requestUri, '/');
+    if ($route === 'index.php') {
+        $route = '';
+    }
+}
 
+$requestMethod = $_SERVER['REQUEST_METHOD'] ?? 'GET';
 $router->dispatch($route, $requestMethod);

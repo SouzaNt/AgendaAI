@@ -51,13 +51,13 @@ class UsuarioController extends Controller {
 
         if ($id) {
             if (!empty($senha)) {
-                $payload['senha'] = password_hash($senha, PASSWORD_DEFAULT);
+                $payload['senha'] = Crypto::hashPassword($senha);
             }
             $updated = UsuarioModel::update($id, $payload);
             return $this->json(['success' => true, 'message' => 'Funcionário atualizado com sucesso!', 'data' => $updated]);
         } else {
             $senhaInicial = !empty($senha) ? $senha : '123456';
-            $payload['senha'] = password_hash($senhaInicial, PASSWORD_DEFAULT);
+            $payload['senha'] = Crypto::hashPassword($senhaInicial);
             $created = UsuarioModel::create($payload);
             return $this->json(['success' => true, 'message' => 'Funcionário cadastrado com sucesso!', 'data' => $created]);
         }

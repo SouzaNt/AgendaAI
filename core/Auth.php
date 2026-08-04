@@ -22,13 +22,26 @@ class Auth {
 
         $usuario = $usuarios[0];
 
-        // Verificar senha
-        if (password_verify($senha, $usuario['senha']) || $senha === $usuario['senha']) {
-            // Atualizar hash de senha se ainda em texto puro (migração legada)
-            if ($senha === $usuario['senha'] && !password_get_info($usuario['senha'])['algo']) {
-                $newHash = password_hash($senha, PASSWORD_DEFAULT);
+        // Verificar senha com Criptografia
+        $isValidPassword = Crypto::verifyPassword($senha, $usuario['senha']);
+        if (!$isValidPassword && $senha === $usuario['senha']) {
+            // Migração transparente caso a senha estivesse em texto puro
+            $newHash = Crypto::hashPassword($senha);
+            JsonDatabase::update('funcionarios', $usuario['id'], ['senha' => $newHash]);
+            $usuario['senha'] = $newHash;
+            $isValidPassword = true;
+        }
+
+        if ($isValidPassword) {
+            // Re-hash automático se o algoritmo ou fator de custo mudou
+            if (password_needs_rehash($usuario['senha'], PASSWORD_BCRYPT, ['cost' => 12])) {
+                $newHash = Crypto::hashPassword($senha);
                 JsonDatabase::update('funcionarios', $usuario['id'], ['senha' => $newHash]);
-                $usuario['senha'] = $newHash;
+            }
+
+            // Regenerar ID da sessão por segurança contra Session Fixation
+            if (session_status() === PHP_SESSION_ACTIVE) {
+                session_regenerate_id(true);
             }
 
             // Buscar Grupo e Permissões

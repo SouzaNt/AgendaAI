@@ -108,5 +108,47 @@
         "ativo": true,
         "created_at": "2026-07-31 14:50:10",
         "updated_at": "2026-07-31 15:05:42"
+    },
+    {
+        "usuario_id": 2,
+        "usuario_nome": "Prof.Lucas",
+        "tipo_uso": "Unidade",
+        "motivo": "Quero passar um documentário aos meus alunos",
+        "data_inicio": "2026-10-17 13:30:00",
+        "data_fim": "2026-10-17 17:30:00",
+        "recursos_ids": [
+            4
+        ],
+        "salas_ids": [],
+        "instituicao_id": 4,
+        "observacoes": "Preciso do carregador",
+        "prioridade_emergencia": false,
+        "status": "Aprovado",
+        "motivo_cancelamento": null,
+        "id": 6,
+        "ativo": true,
+        "created_at": "2026-08-04 15:28:53",
+        "updated_at": "2026-08-04 15:29:53"
+    },
+    {
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "tipo_uso": "Unidade",
+        "motivo": "Quero passar um documentário aos meus alunos",
+        "data_inicio": "2026-08-06 08:00:00",
+        "data_fim": "2026-08-06 12:00:00",
+        "recursos_ids": [],
+        "salas_ids": [
+            4
+        ],
+        "instituicao_id": 4,
+        "observacoes": "",
+        "prioridade_emergencia": false,
+        "status": "Aprovado",
+        "motivo_cancelamento": null,
+        "id": 7,
+        "ativo": true,
+        "created_at": "2026-08-04 16:10:21",
+        "updated_at": "2026-08-04 16:10:26"
     }
 ]

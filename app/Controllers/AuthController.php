@@ -43,29 +43,29 @@ class AuthController extends Controller {
             return $this->json(['success' => false, 'message' => 'E-mail não encontrado no sistema.']);
         }
 
-        // Gerar token de recuperação temporário
-        $token = bin2hex(random_bytes(16));
+        // Gerar token seguro e salvar apenas a hash SHA-256 no banco
+        $token = Crypto::generateToken(32);
+        $tokenHash = Crypto::hashToken($token);
         $expiration = date('Y-m-d H:i:s', strtotime('+1 hour'));
 
         UsuarioModel::update($user['id'], [
-            'reset_token' => $token,
+            'reset_token' => $tokenHash,
             'reset_token_expires' => $expiration
         ]);
 
         $resetLink = BASE_URL . "/reset-password?token=" . $token;
 
-        $corpoEmail = "<p>Olá <strong>{$user['nome']}</strong>,</p>
+        $corpoEmail = "<p>Olá <strong>" . htmlspecialchars($user['nome']) . "</strong>,</p>
             <p>Você solicitou a recuperação de senha no AgendaAI.</p>
             <p>Clique no link a seguir para redefinir sua senha (válido por 1 hora):</p>
-            <p><a href='{$resetLink}' style='background:#2563eb;color:#fff;padding:8px 16px;text-decoration:none;border-radius:4px;'>Redefinir Minha Senha</a></p>
+            <p><a href='{$resetLink}' style='background:#004b87;color:#fff;padding:10px 20px;text-decoration:none;border-radius:6px;display:inline-block;font-weight:bold;'>Redefinir Minha Senha</a></p>
             <p>Se você não solicitou esta alteração, desconsidere este e-mail.</p>";
 
         Notification::sendEmailSimulated($user['email'], $user['nome'], 'Recuperação de Senha - AgendaAI', $corpoEmail, 'Esqueci Minha Senha');
 
         return $this->json([
             'success' => true, 
-            'message' => 'Instruções de redefinição e link temporário foram enviados para seu e-mail.',
-            'debug_link' => $resetLink // Facilitador de testes
+            'message' => 'Instruções de redefinição e link temporário foram enviados para seu e-mail cadastrado.'
         ]);
     }
 
@@ -74,8 +74,13 @@ class AuthController extends Controller {
         if (empty($token)) {
             die("Token inválido ou expirado.");
         }
-        $users = UsuarioModel::where(function ($u) use ($token) {
-            return ($u['reset_token'] ?? '') === $token && strtotime($u['reset_token_expires'] ?? '') > time();
+
+        $tokenHash = Crypto::hashToken($token);
+
+        $users = UsuarioModel::where(function ($u) use ($token, $tokenHash) {
+            $saved = $u['reset_token'] ?? '';
+            $match = ($saved === $tokenHash || $saved === $token); // suporte temporário se migrando
+            return $match && strtotime($u['reset_token_expires'] ?? '') > time();
         });
 
         if (empty($users)) {
@@ -95,8 +100,12 @@ class AuthController extends Controller {
             return $this->json(['success' => false, 'message' => 'A senha deve conter no mínimo 6 caracteres.']);
         }
 
-        $users = UsuarioModel::where(function ($u) use ($token) {
-            return ($u['reset_token'] ?? '') === $token && strtotime($u['reset_token_expires'] ?? '') > time();
+        $tokenHash = Crypto::hashToken($token);
+
+        $users = UsuarioModel::where(function ($u) use ($token, $tokenHash) {
+            $saved = $u['reset_token'] ?? '';
+            $match = ($saved === $tokenHash || $saved === $token);
+            return $match && strtotime($u['reset_token_expires'] ?? '') > time();
         });
 
         if (empty($users)) {
@@ -104,7 +113,7 @@ class AuthController extends Controller {
         }
 
         $user = $users[0];
-        $newHash = password_hash($novaSenha, PASSWORD_DEFAULT);
+        $newHash = Crypto::hashPassword($novaSenha);
 
         UsuarioModel::update($user['id'], [
             'senha' => $newHash,

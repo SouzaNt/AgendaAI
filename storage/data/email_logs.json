@@ -37,5 +37,31 @@
         "ativo": true,
         "created_at": "2026-07-31 14:50:10",
         "updated_at": "2026-07-31 14:50:10"
+    },
+    {
+        "destinatario_email": "Lucas@agendaai.com",
+        "destinatario_nome": "Prof.Lucas",
+        "assunto": "Solicitação de Agendamento #6 - AgendaAI",
+        "corpo": "<p>Sua reserva foi cadastrada com sucesso! Status atual: <strong>Pendente<\/strong>.<\/p>",
+        "tipo_evento": "Agendamento",
+        "data_envio": "2026-08-04 15:28:53",
+        "status": "Enviado (Simulado)",
+        "id": 4,
+        "ativo": true,
+        "created_at": "2026-08-04 15:28:53",
+        "updated_at": "2026-08-04 15:28:53"
+    },
+    {
+        "destinatario_email": "admin@agendaai.com",
+        "destinatario_nome": "Administrador do Sistema",
+        "assunto": "Solicitação de Agendamento #7 - AgendaAI",
+        "corpo": "<p>Sua reserva foi cadastrada com sucesso! Status atual: <strong>Pendente<\/strong>.<\/p>",
+        "tipo_evento": "Agendamento",
+        "data_envio": "2026-08-04 16:10:21",
+        "status": "Enviado (Simulado)",
+        "id": 5,
+        "ativo": true,
+        "created_at": "2026-08-04 16:10:21",
+        "updated_at": "2026-08-04 16:10:21"
     }
 ]

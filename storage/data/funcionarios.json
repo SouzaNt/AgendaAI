@@ -4,7 +4,7 @@
         "nome": "Administrador do Sistema",
         "foto": null,
         "email": "admin@agendaai.com",
-        "senha": "$2y$10$3fjN9gdTeP2Y5KCn.OpfJ.qD5DwhdH9m8FJygxgb5qcbFbAnjhzyu",
+        "senha": "$2y$12$jjJKJdXt2u9r1A3J2p69bOKrA17w9DXWvE4912TavTH5yKQKNsiPu",
         "id_funcao": 1,
         "id_grupo": 1,
         "instituicoes_vinculadas": [
@@ -14,38 +14,38 @@
         "recebe_email": true,
         "ativo": true,
         "created_at": "2026-07-30 00:00:00",
-        "updated_at": "2026-07-31 17:12:53"
+        "updated_at": "2026-08-04 15:27:19"
     },
     {
         "id": 2,
         "nome": "Prof.Lucas",
         "foto": null,
         "email": "Lucas@agendaai.com",
-        "senha": "$2y$10$uuMyTq2cDNs4McUuzIuEUen8kE\/YGv4p4bZOazW6IvOU9Wh\/lu43.",
+        "senha": "$2y$12$pikpw9sDyA33nE.ejKTxRutk5wm9tk7TS4YjwkazOxSKXVwtg4md.",
         "id_funcao": 2,
         "id_grupo": 3,
         "instituicoes_vinculadas": [
-            1
+            4
         ],
         "recebe_email": true,
         "ativo": true,
         "created_at": "2026-07-30 00:00:00",
-        "updated_at": "2026-07-31 17:12:56"
+        "updated_at": "2026-08-04 15:27:30"
     },
     {
         "nome": "Natan",
         "email": "natansmak@gmail.com",
         "id_funcao": 4,
-        "id_grupo": 1,
+        "id_grupo": 3,
         "instituicoes_vinculadas": [
             4
         ],
         "recebe_email": true,
-        "senha": "$2y$10$7.d2.WT.eOG4f.ke3EzehOwU\/X0l7tYlZuApblY.b8BDfdK.XaOS.",
+        "senha": "$2y$12$7up1CobRf08MxXMaFLR0P.zOEt\/JZTYcXozwOBtcZMa04TzZkwAYq",
         "id": 3,
         "ativo": true,
         "created_at": "2026-07-30 15:25:53",
-        "updated_at": "2026-07-31 17:12:58"
+        "updated_at": "2026-08-04 15:26:25"
     },
     {
         "nome": "Keylane",

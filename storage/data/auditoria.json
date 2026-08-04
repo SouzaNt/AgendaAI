@@ -1602,5 +1602,649 @@
         "ativo": true,
         "created_at": "2026-07-31 18:17:16",
         "updated_at": "2026-07-31 18:17:16"
+    },
+    {
+        "data_hora": "2026-08-04 15:07:59",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "::1",
+        "id": 60,
+        "ativo": true,
+        "created_at": "2026-08-04 15:07:59",
+        "updated_at": "2026-08-04 15:07:59"
+    },
+    {
+        "data_hora": "2026-08-04 15:09:03",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Alteração",
+        "tabela": "recursos",
+        "valores_anteriores": {
+            "id": 4,
+            "nome": "Caixa Som JBL EON",
+            "id_tipo_recurso": 3,
+            "patrimonio": "PAT-2026-004",
+            "id_instituicao_responsavel": 2,
+            "numero_serie": "SN-JBL-7711",
+            "estado": "Não Funcionando",
+            "historico_movimentacao": "Enviado para manutenção preventiva",
+            "disponivel_agendamento": false,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-07-30 00:00:00"
+        },
+        "valores_novos": {
+            "id": 4,
+            "nome": "Caixa Som JBL EON",
+            "id_tipo_recurso": 3,
+            "patrimonio": "PAT-2026-004",
+            "id_instituicao_responsavel": 4,
+            "numero_serie": "SN-JBL-7711",
+            "estado": "Funcionando",
+            "historico_movimentacao": "Enviado para manutenção preventiva",
+            "disponivel_agendamento": true,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-08-04 15:09:03"
+        },
+        "ip": "::1",
+        "id": 61,
+        "ativo": true,
+        "created_at": "2026-08-04 15:09:03",
+        "updated_at": "2026-08-04 15:09:03"
+    },
+    {
+        "data_hora": "2026-08-04 15:25:50",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "::1",
+        "id": 62,
+        "ativo": true,
+        "created_at": "2026-08-04 15:25:50",
+        "updated_at": "2026-08-04 15:25:50"
+    },
+    {
+        "data_hora": "2026-08-04 15:25:52",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "natansmak@gmail.com"
+        },
+        "ip": "::1",
+        "id": 63,
+        "ativo": true,
+        "created_at": "2026-08-04 15:25:52",
+        "updated_at": "2026-08-04 15:25:52"
+    },
+    {
+        "data_hora": "2026-08-04 15:26:25",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Alteração",
+        "tabela": "funcionarios",
+        "valores_anteriores": {
+            "nome": "Natan",
+            "email": "natansmak@gmail.com",
+            "id_funcao": 4,
+            "id_grupo": 1,
+            "instituicoes_vinculadas": [
+                4
+            ],
+            "recebe_email": true,
+            "senha": "$2y$12$7up1CobRf08MxXMaFLR0P.zOEt\/JZTYcXozwOBtcZMa04TzZkwAYq",
+            "id": 3,
+            "ativo": true,
+            "created_at": "2026-07-30 15:25:53",
+            "updated_at": "2026-08-04 15:25:52"
+        },
+        "valores_novos": {
+            "nome": "Natan",
+            "email": "natansmak@gmail.com",
+            "id_funcao": 4,
+            "id_grupo": 3,
+            "instituicoes_vinculadas": [
+                4
+            ],
+            "recebe_email": true,
+            "senha": "$2y$12$7up1CobRf08MxXMaFLR0P.zOEt\/JZTYcXozwOBtcZMa04TzZkwAYq",
+            "id": 3,
+            "ativo": true,
+            "created_at": "2026-07-30 15:25:53",
+            "updated_at": "2026-08-04 15:26:25"
+        },
+        "ip": "::1",
+        "id": 64,
+        "ativo": true,
+        "created_at": "2026-08-04 15:26:25",
+        "updated_at": "2026-08-04 15:26:25"
+    },
+    {
+        "data_hora": "2026-08-04 15:27:00",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Alteração",
+        "tabela": "funcionarios",
+        "valores_anteriores": {
+            "id": 2,
+            "nome": "Prof.Lucas",
+            "foto": null,
+            "email": "Lucas@agendaai.com",
+            "senha": "$2y$10$uuMyTq2cDNs4McUuzIuEUen8kE\/YGv4p4bZOazW6IvOU9Wh\/lu43.",
+            "id_funcao": 2,
+            "id_grupo": 3,
+            "instituicoes_vinculadas": [
+                1
+            ],
+            "recebe_email": true,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-07-31 17:12:56"
+        },
+        "valores_novos": {
+            "id": 2,
+            "nome": "Prof.Lucas",
+            "foto": null,
+            "email": "Lucas@agendaai.com",
+            "senha": "$2y$12$pikpw9sDyA33nE.ejKTxRutk5wm9tk7TS4YjwkazOxSKXVwtg4md.",
+            "id_funcao": 2,
+            "id_grupo": 3,
+            "instituicoes_vinculadas": [
+                1
+            ],
+            "recebe_email": true,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-08-04 15:27:00"
+        },
+        "ip": "::1",
+        "id": 65,
+        "ativo": true,
+        "created_at": "2026-08-04 15:27:00",
+        "updated_at": "2026-08-04 15:27:00"
+    },
+    {
+        "data_hora": "2026-08-04 15:27:00",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Reset de Senha pelo Admin",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "id": 2,
+            "nova_senha": "123456"
+        },
+        "ip": "::1",
+        "id": 66,
+        "ativo": true,
+        "created_at": "2026-08-04 15:27:00",
+        "updated_at": "2026-08-04 15:27:00"
+    },
+    {
+        "data_hora": "2026-08-04 15:27:05",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "::1",
+        "id": 67,
+        "ativo": true,
+        "created_at": "2026-08-04 15:27:05",
+        "updated_at": "2026-08-04 15:27:05"
+    },
+    {
+        "data_hora": "2026-08-04 15:27:08",
+        "usuario_id": 2,
+        "usuario_nome": "Prof.Lucas",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "Lucas@agendaai.com"
+        },
+        "ip": "::1",
+        "id": 68,
+        "ativo": true,
+        "created_at": "2026-08-04 15:27:08",
+        "updated_at": "2026-08-04 15:27:08"
+    },
+    {
+        "data_hora": "2026-08-04 15:27:17",
+        "usuario_id": 2,
+        "usuario_nome": "Prof.Lucas",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "::1",
+        "id": 69,
+        "ativo": true,
+        "created_at": "2026-08-04 15:27:17",
+        "updated_at": "2026-08-04 15:27:17"
+    },
+    {
+        "data_hora": "2026-08-04 15:27:19",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "::1",
+        "id": 70,
+        "ativo": true,
+        "created_at": "2026-08-04 15:27:19",
+        "updated_at": "2026-08-04 15:27:19"
+    },
+    {
+        "data_hora": "2026-08-04 15:27:30",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Alteração",
+        "tabela": "funcionarios",
+        "valores_anteriores": {
+            "id": 2,
+            "nome": "Prof.Lucas",
+            "foto": null,
+            "email": "Lucas@agendaai.com",
+            "senha": "$2y$12$pikpw9sDyA33nE.ejKTxRutk5wm9tk7TS4YjwkazOxSKXVwtg4md.",
+            "id_funcao": 2,
+            "id_grupo": 3,
+            "instituicoes_vinculadas": [
+                1
+            ],
+            "recebe_email": true,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-08-04 15:27:00"
+        },
+        "valores_novos": {
+            "id": 2,
+            "nome": "Prof.Lucas",
+            "foto": null,
+            "email": "Lucas@agendaai.com",
+            "senha": "$2y$12$pikpw9sDyA33nE.ejKTxRutk5wm9tk7TS4YjwkazOxSKXVwtg4md.",
+            "id_funcao": 2,
+            "id_grupo": 3,
+            "instituicoes_vinculadas": [
+                4
+            ],
+            "recebe_email": true,
+            "ativo": true,
+            "created_at": "2026-07-30 00:00:00",
+            "updated_at": "2026-08-04 15:27:30"
+        },
+        "ip": "::1",
+        "id": 71,
+        "ativo": true,
+        "created_at": "2026-08-04 15:27:30",
+        "updated_at": "2026-08-04 15:27:30"
+    },
+    {
+        "data_hora": "2026-08-04 15:27:32",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "::1",
+        "id": 72,
+        "ativo": true,
+        "created_at": "2026-08-04 15:27:32",
+        "updated_at": "2026-08-04 15:27:32"
+    },
+    {
+        "data_hora": "2026-08-04 15:27:35",
+        "usuario_id": 2,
+        "usuario_nome": "Prof.Lucas",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "Lucas@agendaai.com"
+        },
+        "ip": "::1",
+        "id": 73,
+        "ativo": true,
+        "created_at": "2026-08-04 15:27:35",
+        "updated_at": "2026-08-04 15:27:35"
+    },
+    {
+        "data_hora": "2026-08-04 15:28:53",
+        "usuario_id": 2,
+        "usuario_nome": "Prof.Lucas",
+        "acao": "Inclusão",
+        "tabela": "agendamentos",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "usuario_id": 2,
+            "usuario_nome": "Prof.Lucas",
+            "tipo_uso": "Unidade",
+            "motivo": "Quero passar um documentário aos meus alunos",
+            "data_inicio": "2026-10-17 13:30:00",
+            "data_fim": "2026-10-17 17:30:00",
+            "recursos_ids": [
+                4
+            ],
+            "salas_ids": [],
+            "instituicao_id": 4,
+            "observacoes": "Preciso do carregador",
+            "prioridade_emergencia": false,
+            "status": "Pendente",
+            "motivo_cancelamento": null,
+            "id": 6,
+            "ativo": true,
+            "created_at": "2026-08-04 15:28:53",
+            "updated_at": "2026-08-04 15:28:53"
+        },
+        "ip": "::1",
+        "id": 74,
+        "ativo": true,
+        "created_at": "2026-08-04 15:28:53",
+        "updated_at": "2026-08-04 15:28:53"
+    },
+    {
+        "data_hora": "2026-08-04 15:29:23",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "natansmak@gmail.com"
+        },
+        "ip": "::1",
+        "id": 75,
+        "ativo": true,
+        "created_at": "2026-08-04 15:29:23",
+        "updated_at": "2026-08-04 15:29:23"
+    },
+    {
+        "data_hora": "2026-08-04 15:29:26",
+        "usuario_id": 3,
+        "usuario_nome": "Natan",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "::1",
+        "id": 76,
+        "ativo": true,
+        "created_at": "2026-08-04 15:29:26",
+        "updated_at": "2026-08-04 15:29:26"
+    },
+    {
+        "data_hora": "2026-08-04 15:29:31",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "::1",
+        "id": 77,
+        "ativo": true,
+        "created_at": "2026-08-04 15:29:31",
+        "updated_at": "2026-08-04 15:29:31"
+    },
+    {
+        "data_hora": "2026-08-04 15:29:53",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Alteração",
+        "tabela": "agendamentos",
+        "valores_anteriores": {
+            "usuario_id": 2,
+            "usuario_nome": "Prof.Lucas",
+            "tipo_uso": "Unidade",
+            "motivo": "Quero passar um documentário aos meus alunos",
+            "data_inicio": "2026-10-17 13:30:00",
+            "data_fim": "2026-10-17 17:30:00",
+            "recursos_ids": [
+                4
+            ],
+            "salas_ids": [],
+            "instituicao_id": 4,
+            "observacoes": "Preciso do carregador",
+            "prioridade_emergencia": false,
+            "status": "Pendente",
+            "motivo_cancelamento": null,
+            "id": 6,
+            "ativo": true,
+            "created_at": "2026-08-04 15:28:53",
+            "updated_at": "2026-08-04 15:28:53"
+        },
+        "valores_novos": {
+            "usuario_id": 2,
+            "usuario_nome": "Prof.Lucas",
+            "tipo_uso": "Unidade",
+            "motivo": "Quero passar um documentário aos meus alunos",
+            "data_inicio": "2026-10-17 13:30:00",
+            "data_fim": "2026-10-17 17:30:00",
+            "recursos_ids": [
+                4
+            ],
+            "salas_ids": [],
+            "instituicao_id": 4,
+            "observacoes": "Preciso do carregador",
+            "prioridade_emergencia": false,
+            "status": "Aprovado",
+            "motivo_cancelamento": null,
+            "id": 6,
+            "ativo": true,
+            "created_at": "2026-08-04 15:28:53",
+            "updated_at": "2026-08-04 15:29:53"
+        },
+        "ip": "::1",
+        "id": 78,
+        "ativo": true,
+        "created_at": "2026-08-04 15:29:53",
+        "updated_at": "2026-08-04 15:29:53"
+    },
+    {
+        "data_hora": "2026-08-04 15:56:55",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "::1",
+        "id": 79,
+        "ativo": true,
+        "created_at": "2026-08-04 15:56:55",
+        "updated_at": "2026-08-04 15:56:55"
+    },
+    {
+        "data_hora": "2026-08-04 16:10:00",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Inclusão",
+        "tabela": "salas",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "nome": "Sala 4",
+            "id_instituicao_vinculada": 4,
+            "id": 4,
+            "ativo": true,
+            "created_at": "2026-08-04 16:10:00",
+            "updated_at": "2026-08-04 16:10:00"
+        },
+        "ip": "::1",
+        "id": 80,
+        "ativo": true,
+        "created_at": "2026-08-04 16:10:00",
+        "updated_at": "2026-08-04 16:10:00"
+    },
+    {
+        "data_hora": "2026-08-04 16:10:21",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Inclusão",
+        "tabela": "agendamentos",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "usuario_id": 1,
+            "usuario_nome": "Administrador do Sistema",
+            "tipo_uso": "Unidade",
+            "motivo": "Quero passar um documentário aos meus alunos",
+            "data_inicio": "2026-08-06 08:00:00",
+            "data_fim": "2026-08-06 12:00:00",
+            "recursos_ids": [],
+            "salas_ids": [
+                4
+            ],
+            "instituicao_id": 4,
+            "observacoes": "",
+            "prioridade_emergencia": false,
+            "status": "Pendente",
+            "motivo_cancelamento": null,
+            "id": 7,
+            "ativo": true,
+            "created_at": "2026-08-04 16:10:21",
+            "updated_at": "2026-08-04 16:10:21"
+        },
+        "ip": "::1",
+        "id": 81,
+        "ativo": true,
+        "created_at": "2026-08-04 16:10:21",
+        "updated_at": "2026-08-04 16:10:21"
+    },
+    {
+        "data_hora": "2026-08-04 16:10:26",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Alteração",
+        "tabela": "agendamentos",
+        "valores_anteriores": {
+            "usuario_id": 1,
+            "usuario_nome": "Administrador do Sistema",
+            "tipo_uso": "Unidade",
+            "motivo": "Quero passar um documentário aos meus alunos",
+            "data_inicio": "2026-08-06 08:00:00",
+            "data_fim": "2026-08-06 12:00:00",
+            "recursos_ids": [],
+            "salas_ids": [
+                4
+            ],
+            "instituicao_id": 4,
+            "observacoes": "",
+            "prioridade_emergencia": false,
+            "status": "Pendente",
+            "motivo_cancelamento": null,
+            "id": 7,
+            "ativo": true,
+            "created_at": "2026-08-04 16:10:21",
+            "updated_at": "2026-08-04 16:10:21"
+        },
+        "valores_novos": {
+            "usuario_id": 1,
+            "usuario_nome": "Administrador do Sistema",
+            "tipo_uso": "Unidade",
+            "motivo": "Quero passar um documentário aos meus alunos",
+            "data_inicio": "2026-08-06 08:00:00",
+            "data_fim": "2026-08-06 12:00:00",
+            "recursos_ids": [],
+            "salas_ids": [
+                4
+            ],
+            "instituicao_id": 4,
+            "observacoes": "",
+            "prioridade_emergencia": false,
+            "status": "Aprovado",
+            "motivo_cancelamento": null,
+            "id": 7,
+            "ativo": true,
+            "created_at": "2026-08-04 16:10:21",
+            "updated_at": "2026-08-04 16:10:26"
+        },
+        "ip": "::1",
+        "id": 82,
+        "ativo": true,
+        "created_at": "2026-08-04 16:10:26",
+        "updated_at": "2026-08-04 16:10:26"
+    },
+    {
+        "data_hora": "2026-08-04 17:12:59",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "10.52.3.127",
+        "id": 83,
+        "ativo": true,
+        "created_at": "2026-08-04 17:12:59",
+        "updated_at": "2026-08-04 17:12:59"
+    },
+    {
+        "data_hora": "2026-08-04 17:13:04",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Logout",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": null,
+        "ip": "10.52.3.127",
+        "id": 84,
+        "ativo": true,
+        "created_at": "2026-08-04 17:13:04",
+        "updated_at": "2026-08-04 17:13:04"
+    },
+    {
+        "data_hora": "2026-08-04 17:16:51",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "10.52.3.135",
+        "id": 85,
+        "ativo": true,
+        "created_at": "2026-08-04 17:16:51",
+        "updated_at": "2026-08-04 17:16:51"
+    },
+    {
+        "data_hora": "2026-08-04 17:19:37",
+        "usuario_id": 1,
+        "usuario_nome": "Administrador do Sistema",
+        "acao": "Login",
+        "tabela": "funcionarios",
+        "valores_anteriores": null,
+        "valores_novos": {
+            "email": "admin@agendaai.com"
+        },
+        "ip": "10.52.3.28",
+        "id": 86,
+        "ativo": true,
+        "created_at": "2026-08-04 17:19:37",
+        "updated_at": "2026-08-04 17:19:37"
     }
 ]
